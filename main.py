@@ -16,6 +16,7 @@ def run():
     lib.add_user(User("Mary", "U003"))
     lib.add_user(User("Jaciel", "U004"))
 
+
     while True:
         print("\n--- Library System ---")
         print("1. Borrow a book")
@@ -27,7 +28,7 @@ def run():
 
         if option == "0":
             break
-        elif option == "2":
+        elif option == "1":
             isbn = input("Enter book ISBN: ")
             user_id = input("Enter user ID: ")
             try:
@@ -35,7 +36,7 @@ def run():
                 print("Book successfully borrowed")
             except ValueError as e:
                 print("Error:", e)
-        elif option == "1":
+        elif option == "2":
             isbn = input("Enter book ISBN: ")
             user_id = input("Enter user ID: ")
             try:
